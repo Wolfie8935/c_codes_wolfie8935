@@ -9,8 +9,8 @@ struct details{
 int main (){
     strcpy(s1.name, "Aman");
     s1.age = 3;
-    *ptr = s1;
-    printf("name: %s",ptr->name);
+    ptr = &s1;
+    printf("name: %s\n",ptr->name);
     printf("age: %d",ptr->age);
 
     return 0;
