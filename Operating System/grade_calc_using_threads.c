@@ -17,6 +17,7 @@ void* threadFunction (void* threadID){
     sem_wait(&semaphore);
     shared_resource++;
     float avrg;
+    printf("\nEnter student %d average total: ", tid);
     scanf("%f",&avrg);
     if(avrg>9.0){
         printf("Student %d has scored grade O\n", tid);
@@ -32,6 +33,7 @@ void* threadFunction (void* threadID){
     }
     sem_post(&semaphore);
     avrg = 0;
+    sleep(1);
     pthread_exit(NULL);
 }
 
