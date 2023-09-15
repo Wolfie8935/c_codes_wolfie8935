@@ -15,7 +15,7 @@ int main() {
     printf("Enter matrix 2: \n");
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            scanf("%d", &mat2[i][j]); 
+            scanf("%d", &mat2[i][j]); // Use mat2[i][j] instead of mat2[3][3]
         }
     }
 
